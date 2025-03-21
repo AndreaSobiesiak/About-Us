@@ -8,145 +8,346 @@
     <style>
       img {
         margin-top: 10pt;
-            max-width: 100%;
-            height: auto;
+        max-width: 100%;
+        height: auto;
         box-align: center; 
-        }
-        body {
-            
-            margin: 0;
-            background-color: #f7ffff;
-        }
-        nav {
-            background-color: #ffeefa ;
-            font-family: "Inter", sans-serif;
-            padding: 10px;
-            text-align: center;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #3c55a5;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .container {max-width: 800px;
-    margin: 100px auto;
+      }
+      body {
+        margin: 0;
+        background-color: #f7ffff;
+      }
+      nav {
+        background-color: #ffeefa;
+        font-family: "Inter", sans-serif;
+        padding: 10px;
+        text-align: center;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+      }
+      nav a {
+        margin: 0 15px;
+        text-decoration: none;
+        color: #3c55a5;
+        font-weight: bold;
+      }
+      nav a:hover {
+        text-decoration: underline;
+      }
+      .container {
+    max-width: 800px;
+    margin: 90px auto 0;  
     padding: 20px;
+        padding-bottom: 5px;
     background-color: #ffeefa;
-    border-radius: 10px;
+    border-radius: 0px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     font-family: "Inter", sans-serif;
-    display: flex; /* Use flexbox to align the contents */
-    align-items: flex-start; /* Align items to the start (top) */
+    text-align: center;
 }
 
-.content {
-    display: flex; /* Keeps the text and image side by side */
-    width: 100%; /* Use the full width of the container */
-}
+      .horizontal-line {
+        width: 100%; 
+        height: 2px; 
+        background-color: #3c55a5; 
+        margin-top: 65px; 
+        margin-bottom: 65px;
+      }
 
-.side-image {
-    margin-left: 20px; /* Add space between text and image */
-    max-width: 250px; /* Set a max-width for the image */
-    height: auto; /* Maintain aspect ratio */
-} .horizontal-line {
-            width: 100%; 
-            height: 2px; 
-            background-color: #3c55a5; 
-            margin-top: 65px; 
-            margin-bottom: 65px;
-        }
-      
       .title {
-    text-align: center;  
-    padding-top: 80pt;
-}
+        padding-top: 80pt;
+      }
 
-.title img {
-    max-width: 60%;  
-    height: auto;    
-    display: block;  
-    margin: 0 auto;  
-}
-        h1 {
-            text-align: center;
-          font-family: "Pacifico", sans-serif;
-            color: #3c55a5;
-          font-size: 30pt;
-        }
-      
+      .title img {
+        max-width: 60%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      h1 {
+        font-family: "Pacifico", sans-serif;
+        color: #3c55a5;
+        font-size: 40pt;
+        text-align: Center
+      }
+
       h2 {
-        font-family: "Inter", sans-serif;
-            color: #3c55a5;
-        font-size: 25pt; 
+        font-family: "Pacifico", sans-serif;
+        color: #3c55a5;
+        font-size: 28pt;
         font-weight: bold;
-        text-align: center;
-        }
-      
+        text-align: center; 
+      }
+
       h3 {
-            
         font-family: "Inter", sans-serif;
-            color: #3c55a5;
-        font-size: 18pt; 
-        font-weight: bold; 
-        }
+        color: #3c55a5;
+        font-size: 18pt;
+        font-weight: bold;
+        text-align: center; 
+      }
       
+      h4 {
+        font-family: "Pacifico", sans-serif;
+        color: #ffe8ff;
+        font-size: 30pt;
+        text-align: Center
+      }
+
       p {
         font-family: "Inter", sans-serif;
-            color: #3c55a5;
-        font-size: 15pt; 
+        color: #3c55a5;
+        font-size: 15pt;
+        margin: 10px 0;
+      }
+
+      .flex-container {
+        display: flex;
+        justify-content: center; 
+        align-items: center;
+        margin: 10px 0;
+      }
+
+      .flex-container h3 {
+        margin-right: 10px;
+      }
+
+      .side-image {
+        max-width: 60%; 
+        height: auto;
+        display: block;
+        margin: 20px auto 0; 
+      }
+      
+      .button-container {
+    position: relative;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    background-image: url(pupbreak.jpg);
+    background-size: cover;   
+    background-position: center;
+    width: 55.7%;              
+    height: 300px;            
+    margin: 0 auto;           
+}
+      
+      .button2-container {
+    position: relative;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    background-image: url(halfday.jpg);
+    background-size: cover;   
+    background-position: center;
+    width: 55.7%;              
+    height: 300px;            
+    margin: 0 auto;           
+}
+      .button3-container {
+    position: relative;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    background-image: url(fullday.jpg);
+    background-size: cover;   
+    background-position: center;
+    width: 55.7%;              
+    height: 300px;            
+    margin: 0 auto;  
+         
+}
+      .button4-container {
+    position: relative;
+    display: flex;
+    justify-content: center;  
+    align-items: center;      
+    background-image: url(lookbook.jpg);
+    background-size: cover;   
+    background-position: center;
+    width: 100%;              
+    height: 400px;            
+    margin: 0 auto; 
+        margin-bottom: 50pt; 
+         
+}
+      
+.book-now-button {
+    display: inline-block;
+    background-color: #3c55a5;
+    color: #ffe8ff;
+    padding: 20px 40px;       
+    font-family: "Pacifico", sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25pt;
+    transition: background-color 0.5s;
+    border-radius: 5px;       
+}
+
+.book-now-button:hover {
+    background-color: #c4cfff;
+    border-color: #3c55a5;
+    color: #ffe8ff;
+}
+      .text-content {
+            max-width: 100%; 
+            background: #ffe8ff; 
+        text-align: center; 
+        padding: 20pt;
+        margin-top: 40pt;
+        margin-bottom: 40pt; 
         }
       
-        
-        
     </style>
-  
 </head>
 <body>
-  
+
   <nav>
-        <a href="https://netnet.studio/?gh=AndreaSobiesiak/Practice">Home</a> 
-        <a href="#About Us">About Us</a>
-        <a href="#Look Book">Look Book</a>
-       
-    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now">Book Now</a> <!-- Link to the Booking Page -->
-    </nav>
-      
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Practice">Home</a>
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/About-Us">Services</a>
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Practice">Look Book</a>
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now">Book Now</a> 
+  </nav>
+  
+ 
+
   <div class="title">
-  <img src="titlecard-removebg-preview.png" alt="Title Card Paws & Play">
-       
-    <h1>
-      Services 
-    </h1>
+    <img src="titlecard-removebg-preview.png" alt="Title Card Paws & Play">
+   
+  </div>
+
+  <div class="horizontal-line"></div>
+ <h1>Daycare</h1>
+  <h3>
+    We are open 8am-8pm seven days a week. <br>  
+
+Daycare must be booked in advance, there are no drop-ins allowed. 
+  </h3>
+  <div class="container">
+    <h2>Puppy Break</h2>
+
+    <div class="flex-container">
+      <h3>Duration:</h3>
+      <p>2 hours</p>
+    </div>
+
+    <h3>Description:</h3>
+    <p>A Puppy Break was created for those who needed <br> just a  "couple hours" to run an errand.</p>
+
     
+    <div class="flex-container">
+      <h3>Price:</h3>
+      <p>$15 + tax</p>
+    </div>
+    
+  </div>
+    <div class="button-container">
+    <div class="button-container">
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now" class="book-now-button">Book Now</a>
+</div>
+  </div>
+ 
+  
+  
+  <div class="container">
+    <h2>Half Day</h2>
+    <div class="flex-container">
+      <h3>Duration:</h3>
+      <p>Up to 6 hours</p>
+    </div>
+
+    <h3>Description:</h3>
+    <p>Sometimes a half day is just enough time to allow 
+your <br> dog to socialize and for you to get some work
+done! <br> You get to choose the pick up and drop off 
+time, <br> whatever works for you! <br></p>
+
+    
+    <div class="flex-container">
+      <h3>Price:</h3>
+      <p>$33 + tax</p>
+    </div>
+    
+  </div>
+    <div class="button2-container">
+    <div class="button2-container">
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now" class="book-now-button">Book Now</a>
+</div>
+  </div>
+  
+  
+  
+  
+  
+  <div class="container">
+    <h2>Full Day</h2>
+
+    <div class="flex-container">
+      <h3>Duration:</h3>
+      <p>Up to 12 hours</p>
+    </div>
+
+    <h3>Description:</h3>
+    <p>For busy days or times when you are out of town, <br>
+our daycare is a great option to have your dog <br>
+play and socialize all day!  </p>
+
+    
+    <div class="flex-container">
+      <h3>Price:</h3>
+      <p>$43 + tax</p>
+    </div>
+    
+  </div>
+    <div class="button3-container">
+    <div class="button3-container">
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now" class="book-now-button">Book Now</a>
+<br> 
+      </div>
+  </div>
+ 
+ <div class="horizontal-line"></div>
+ <h1>Packages</h1>
+  <h3>
+    Going to be joining us for daycare frequently? <br> We now offer package prices to give you a discount! <br>    
+  </h3>
+  
+  <div class="text-content">
+  <p>
+     Half-day Daycare Package: $297 +tax for 10 days, one dog. <br>
+<br> 
+Full-day Daycare Package: $387 +tax for 10 days, one dog.
+  </p>
+  
+  <br> 
+ 
+       
+    </div>
+  
+  <h2>
+    Payment 
+  </h2> 
+  
+  <div class="text-content">
+  <p>
+We accept Visa/Mastercard /Amex upon drop off.  <br> 
+    <br> 
+Alternately you can etransfer upon drop off to 
+@PawsAndPlayKing
+  </p>
+       
     </div>
   
   <div class="horizontal-line"></div>
-  
-  <div class="container">
-    <div class="content">
-        <div>
-            <h2>Doggy Break</h2>
-            <h3 style="display: inline-block;"> Duration: </h3>
-            <p style="display: inline-block; margin-left: 5px;">2 hours</p>
-            <h3> Description: </h3>
-            <p>A Doggy Break was created for <br> 
-               those who needed just a "couple <br> hours" to run an errand.</p>
-            <h3 style="display: inline-block;"> Price:</h3>
-            <p style="display: inline-block; margin-left: 5px;"> $25</p>
-        </div>
-        <img src="your-image-path.jpg" alt="Doggy Break Image" class="side-image"> <!-- Add your image path here -->
-    </div>
+ 
+   <div class="button4-container">
+    <div class="button4-container4">
+    <a href="https://netnet.studio/?gh=AndreaSobiesiak/Book-Now" class="book-now-button">Look Book</a>
 </div>
+  </div>
+
+  <img src="footer3.jpg" alt="Footer with phone number, address, socials, and email.">
 </body>
-    
-      <img src="footer3.jpg" alt="Title Card Paws & Play"> 
-  
 </html>
